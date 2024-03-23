@@ -20,17 +20,17 @@ const pointsData = [
 
 const Points = () => {
 	return (
-		<section className="bg-primary-100 py-16">
+		<section className="bg-gradient-to-r from-purple-500 to-primary">
 			<div className="container mx-auto">
 				<h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold mb-4 text-center">
 					Points
 				</h2>
 				<div className="grid center mx-auto w-1/2">
 					<p className="p-4 bg-white rounded-lg shadow-md text-2xl font-semibold mb-2 ">
-						Points Are the Spirit of EACH. They can be received through Dally
+						Points Are the Spirit of EACH. They can be received through Daily
 						Log-Ins, completing Request challenges, posting content, daily
 						reward packs, talking with friends, making themes and stickers,
-						frequently updating your profile, chatting and more. Points can also
+						frequently updating your profile, chatting, and more. Points can also
 						be used in a variety of ways. Points can be used to get themes,
 						stickers, expansion packs, and even IRL rewards. You can send points
 						to friends, give them out for request completions, and share them in

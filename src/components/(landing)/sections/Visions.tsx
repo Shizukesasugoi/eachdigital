@@ -3,7 +3,7 @@ import React from 'react';
 
 const Visions = () => {
 	return (
-		<section className="bg-primary-100 py-16">
+		<section className="bg-gradient-to-r from-red-400 to-white">
 			 
 			<div className="container mx-auto text-center">
 				<h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold mb-4">

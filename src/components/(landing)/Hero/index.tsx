@@ -3,7 +3,7 @@ import HeroContent from "./HeroContent";
 
 const Hero = () => {
   const digitalContent = {
-    title: "Each",
+    title: "EACH",
     description:
       "Join our next-generation social media platform and immerse yourself in a cyberpunk-inspired digital world. Connect with friends, explore futuristic cityscapes, and experience a new era of social networking.",
   };

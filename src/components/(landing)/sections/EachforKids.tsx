@@ -3,7 +3,7 @@ import React from 'react';
 
 const EachforKidsPage: React.FC = () => {
 	return (
-		<section className="bg-primary-100 py-16">
+		<section className="bg-gradient-to-r from-amber-200 to-primary">
 			<div className="container mx-auto">
 				<h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold mb-4 text-center">
 					Each For Kids
@@ -16,9 +16,9 @@ const EachforKidsPage: React.FC = () => {
 							</h3>
 							<p className="text-gray-600">
 								We Have a Side Platform Specifically Set For Young Audiences
-								Being Able to Scroll Through Kid- Friendly, kid-Made, Kid TV,
+								Being Able to Scroll Through Kid-Friendly, Kid-Made, Kid TV,
 								and Similar Content. Laughs Can Be Enjoyed with Age Appropriate
-								Material. Creators and Productions can support.
+								Material. Creators and Productions are Welcome to support.
 							</p>
 						</div>
 					</div>

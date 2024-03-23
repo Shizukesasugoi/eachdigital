@@ -3,7 +3,7 @@ import React from "react";
 
 const ControlYourTimeline = () => {
   return (
-    <section className="bg-primary-100 py-16">
+    <section className="bg-gradient-to-r from-red-400 to-white">
       <div className="container mx-auto">
         <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold mb-4 text-right">
           Control Your Timeline
@@ -25,14 +25,10 @@ const ControlYourTimeline = () => {
           </div>
           <div className="md:w-1/2 pl-8">
             <p className="text-lg text-gray-600 text-left">
-              EACH is free-flow and One-day Endless. Create your network the way
-              that you please. Rearrange the sizing of your feeds. Choose what
-              you need on your side Bars, and figure out what&apos;s your
-              priority. Join a social landscape that chases the convenience of
-              your browser. Easily discuss with a chatbot before you post, have
-              quick access to your messages, and have access to multiple content
+              Endless EACH. <br/> Design your network and arrange feeds intuitively. Choose your priorities on your sidebars.<br/> Join a social landscape that chases the convenience of
+              your browser. Easy and quick access to your messages and multiple content
               forms. You can always select what you do and don&apos;t want to
-              see at a given time. Not in mood to come across photos? No
+              see at a given time. Not in the mood to come across photos? No
               problem. Want to see photos only? Of course!
             </p>
           </div>

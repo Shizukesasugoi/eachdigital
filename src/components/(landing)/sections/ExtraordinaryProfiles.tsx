@@ -28,7 +28,7 @@ const imageHeight = 620;
 
 const ExtraordinaryProfiles = () => {
 	return (
-		<section className="bg-primary-100 py-16">
+		<section className="bg-gradient-to-r from-cyan-200 to-red-100">
 			<style>
 				{`
           .responsive-div {
@@ -57,15 +57,15 @@ const ExtraordinaryProfiles = () => {
 					Goodbye Outdated Profiles. Our Needs Have Changed.
 				</h2>
 				<p className="text-lg mb-8 text-center">
-					4 Screens, Right, Left, Down, up, Come Together to form One Full
+					4 Screens of Your Content, Right, Left, Down, and Up, Come Together to form One Full
 					Display Ready For All of Your Links, Content, and However You&apos;d
-					Like To Express Yourself. You&apos;ll Also Have Your Posts Below and
-					Space For Our Extensions and Expansion Packs. Show Everything You Got,
+					Like To Express Yourself. You&apos;ll Also Have Your Full Timeline of Posts Below and
+					Space For Our Extensions and Expansion Packs That You Choose. Users Can View More of Your Profile in Any Direction. Show Everything You Got 
 					and Leave the Perfect Spot For Your Friends, Business Partners, and
 					Supporters to Interact and Get To Know You. The Possibilities are
-					Endless. Obtain subscrlbers, and, make your profile private if you
+					Endless. Obtain subscribers, and, make your profile private if you
 					please. To see and get Inspired by all of the profiles out there,
-					users get a feed of profiles that they can scroll through and check
+					users easily are set to get a feed of profiles that they can scroll through and check
 					out. Who knows, maybe you&apos;ll find someone new to support solely
 					off of their style.
 				</p>

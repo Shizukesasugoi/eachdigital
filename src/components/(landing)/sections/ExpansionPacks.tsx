@@ -24,7 +24,7 @@ const expansionPacks = [
 
 const ExpansionPacks = () => {
   return (
-    <section className="bg-primary-100 py-16">
+    <section className="bg-gradient-to-r from-gray-500 to-red-900 bg-gradient-to-t from-red-200 to-purple-900">
       <div className="container mx-auto">
       <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold mb-4">Expansion Packs</h2>
       <p className="md:w-1/2">There are Many Ways to Elevate your Profile. We Won&apos;t List Them All, but We Guarantee You Won&apos;t Go without A Need. We Aim To surpass What You&apos;d Standardly have With a Website.</p>

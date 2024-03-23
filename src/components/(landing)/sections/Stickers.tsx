@@ -19,7 +19,7 @@ const stickersData = [
 
 const Stickers = () => {
   return (
-    <section className="bg-primary-100 py-16">
+    <section className="bg-gradient-to-r from-gray-400 to-red-900">
       <div className="container mx-auto">
       <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold mb-4">Stickers</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <>
       <footer
-        className=" bg-primary-100 wow fadeInUp relative z-10  pt-16 md:pt-20 lg:pt-24"
+        className=" bg-gradient-to-r from-purple-500 to-primary wow fadeInUp relative z-10  pt-16 md:pt-20 lg:pt-24"
         data-wow-delay=".1s"
       >
         <div className="container">
@@ -195,7 +195,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="bg-primary/10 py-8">
+        <div className="bg-gradient-to-r from-purple-500 to-primary">
           <div className="container">
             <p className="text-center text-dark-base text-dark-gray-300 ">
               © {new Date().getFullYear()} Each Digital. All Rights
