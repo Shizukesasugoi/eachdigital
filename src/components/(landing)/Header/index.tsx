@@ -133,14 +133,14 @@ const Header = () => {
                     href="/auth/login"
                     className="hidden py-3 px-7 text-base font-bold text-dark hover:opacity-70  md:block"
                   >
-                    Sign yo
+                    Sign Up
                   </Link>
                   
                   <Link
                     href="/auth/signup"
                     className="hidden p-2 px-4 bg-gradient-to-r from-purple-500 to-primary  hover:opacity-70  text-center text-white cursor-pointer rounded-sm max-w-[200px] md:block"
                   >
-                    Sign Up
+                    Sign Up, Friend!
                   </Link>
 
                 
