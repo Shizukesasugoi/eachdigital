@@ -140,7 +140,7 @@ const Header = () => {
                     href="/auth/signup"
                     className="hidden p-2 px-4 bg-gradient-to-r from-purple-500 to-primary  hover:opacity-70  text-center text-white cursor-pointer rounded-sm max-w-[200px] md:block"
                   >
-                    Sign Up, Friend!
+                    Sign Up
                   </Link>
 
                 
