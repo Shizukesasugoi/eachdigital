@@ -6,7 +6,7 @@ const ItsMoreThenYouThink = () => {
     <section className="bg-gradient-to-r from-cyan-red to-white">
       <div className="container mx-auto">
         <h2 className="text-4xl font-extrabold mb-8">
-          It's More then You Think
+           More then You Think
         </h2>
         <div className="flex flex-wrap justify-center gap-4">
           <FeatureCard

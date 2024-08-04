@@ -4,13 +4,13 @@ import "./globals.css";
 import Providers from "./Provider";
 
 const inter = localFont({
-  src: "sui-generis-free.rg-regular.otf",
+  src: "Helvetica.otf",
   variable: "--font-inter",
 });
 
 export const metadata: Metadata = {
-  title: "Each Digital",
-  description: "Each Digital is a Social Media Network for the Future",
+  title: "EACH",
+  description: "EACH bridges gaps in the social and wellness atmospheres.",
 };
 
 export default function RootLayout({
@@ -22,6 +22,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.variable} font-sans`}>
         <Providers>{children}</Providers>
+        <script>
+          AOS.init();
+        </script>
       </body>
     </html>
   );

@@ -94,7 +94,7 @@ const ChatBoxes = () => {
       </div>
       </section>
       </div>
-      <div className="absolute inset-0 bg-gradient-to-r from-primary-100 via-primary-200 to-primary-300 opacity-25 blur-xl pointer-events-none"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-primary-100 via-primary-200 to-primary-300 opacity-25 blur-xl pointer-events-none"/>
     </section>
   );
 };

@@ -133,7 +133,7 @@ import React from "react";
 
 const aServiceData = [
   {
-    title: "There are many ways to use EACH to promote your business. You can set your profile up to display new campaigns In an engaging format you cant do elsewhere. You can also update your dedicated followers automatically. Show Off Your Own Stickers and Themes, Launch Your own request adventures,and give other Incentives.",
+    title: "There are many ways to use EACH to promote your business. You can set your profile up to display new campaigns in an engaging format that you can't do elsewhere. You can also update your dedicated followers automatically, show off your own stickers and themes, launch your own quest adventures, and give other incentives.",
     description: "",
   },
   // {
