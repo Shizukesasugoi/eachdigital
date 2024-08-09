@@ -1,0 +1,2 @@
+<h2 className="text-lg font-medium text-gray-300">Placeholder Card</h2>
+                <p className="text-sm text-gray-400">This is a placeholder for additional content or functionality.</p>

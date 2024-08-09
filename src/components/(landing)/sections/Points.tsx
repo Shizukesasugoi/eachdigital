@@ -1,56 +1,48 @@
 import React from 'react';
+import { Star } from 'lucide-react';
 
-const pointsData = [
-	{
-		title: 'Point 1',
-		description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-	},
-	{
-		title: 'Point 2',
-		description:
-			'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-	},
-	{
-		title: 'Point 3',
-		description:
-			'Duis aute irure dolor in reprehenderit in voluptate velit esse.',
-	},
-	// Add more points as needed
-];
+
 
 const Points = () => {
-	return (
-		<section className="bg-gradient-to-r from-purple-500 to-primary">
-			<div className="container mx-auto">
-				<h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold mb-4 text-center">
-					Points
-				</h2>
-				<div className="grid center mx-auto w-1/2">
-					<p className="p-4 bg-white rounded-lg shadow-md text-2xl font-semibold mb-2 ">
-						Points Are the Spirit of EACH. They can be received through Daily
-						Log-Ins, completing Request challenges, posting content, daily
-						reward packs, talking with friends, making themes and stickers,
-						frequently updating your profile, chatting, and more. Points can also
-						be used in a variety of ways. Points can be used to get themes,
-						stickers, expansion packs, and even IRL rewards. You can send points
-						to friends, give them out for request completions, and share them in
-						other ways.
-					</p>
-				</div>
-
-				{/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
-					{pointsData.map((point, index) => (
-						<div key={index} className="bg-white rounded-lg shadow-md">
-							<div className="p-4">
-								<h3 className="text-2xl font-semibold mb-2">{point.title}</h3>
-								<p className="text-gray-600">{point.description}</p>
-							</div>
-						</div>
-					))}
-				</div> */}
-			</div>
-		</section>
-	);
+  return (
+    <div className="bg-gradient-to-br from-gray-900 to-gray-800 min-h-screen text-white p-8">
+      <div className="max-w-4xl mx-auto">
+        <h2 className="text-4xl font-bold mb-8 text-center bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">
+          Points
+        </h2>
+        <div className="bg-gray-800 bg-opacity-50 backdrop-filter backdrop-blur-lg rounded-lg p-8 shadow-lg">
+          <div className="flex items-start mb-6">
+            <Star className="w-10 h-10 text-yellow-400 mr-4 flex-shrink-0" />
+            <p className="text-lg leading-relaxed text-gray-300">
+              Points are the spirit of EACH. Earn them through various activities and use them for exciting rewards:
+            </p>
+          </div>
+          <div className="ml-14 space-y-4">
+            <h3 className="text-xl font-semibold text-purple-300">How to Earn Points:</h3>
+            <ul className="list-disc list-inside text-gray-300 space-y-2">
+              <li>Daily Log-Ins</li>
+              <li>Completing Request challenges</li>
+              <li>Posting content</li>
+              <li>Daily reward packs</li>
+              <li>Talking with friends</li>
+              <li>Making themes and stickers</li>
+              <li>Frequently updating your profile</li>
+              <li>Chatting and more</li>
+            </ul>
+            <h3 className="text-xl font-semibold text-purple-300 mt-6">How to Use Points:</h3>
+            <ul className="list-disc list-inside text-gray-300 space-y-2">
+              <li>Get themes and stickers</li>
+              <li>Unlock expansion packs</li>
+              <li>Redeem for IRL rewards</li>
+              <li>Send points to friends</li>
+              <li>Give them out for request completions</li>
+              <li>Share them in other creative ways</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default Points;

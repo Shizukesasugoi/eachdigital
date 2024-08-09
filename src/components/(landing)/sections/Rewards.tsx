@@ -1,44 +1,53 @@
 import React from 'react';
-
-const rewardsData = [
-	{
-		title: 'Reward 1',
-		description: 'Earn points for engaging with our platform.',
-	},
-	{
-		title: 'Reward 2',
-		description: 'Redeem points for exclusive discounts and offers.',
-	},
-	{
-		title: 'Reward 3',
-		description:
-			'Unlock special badges and recognition for your contributions.',
-	},
-	// Add more rewards as needed
-];
+import { Gift, Trophy, Users } from 'lucide-react';
 
 const Rewards = () => {
-	return (
-		<section className="bg-gradient-to-r from-purple-500 to-primary">
-			<div className="container mx-auto">
-				<h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold mb-4 text-center">
-					Rewards
-				</h2>
-				<div className="grid center mx-auto w-1/2">
-					<p className="p-4 bg-white rounded-lg shadow-md text-2xl font-semibold mb-2 ">
-						Each Is filled with rewards. Most commonly, users get rewards for
-						their profiles or for their messages and posts. They may get IRL
-						Items or even a cash reward, coupons, and the like. If users rank
-						high In the annual Each Talent Show, good luck guessing what the
-						rewards will be! Additionally, users will be placed on teams during
-						sign up on the platform. Whichever team has the most points at the
-						end of the year will get special rewards for the entirety of the
-						year following.
-					</p>
-				</div>
-			</div>
-		</section>
-	);
+  return (
+    <div className="bg-gradient-to-br from-gray-900 to-gray-800 min-h-screen text-white p-8">
+      <div className="max-w-4xl mx-auto">
+        <h2 className="text-4xl font-bold mb-8 text-center bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">
+          Rewards
+        </h2>
+        <div className="bg-gray-800 bg-opacity-50 backdrop-filter backdrop-blur-lg rounded-lg p-8 shadow-lg">
+          <p className="text-lg leading-relaxed text-gray-300 mb-8">
+            EACH is filled with rewards. Discover the exciting possibilities:
+          </p>
+          <div className="space-y-8">
+            <RewardSection
+              icon={<Gift className="w-8 h-8 text-green-400" />}
+              title="Profile and Content Rewards"
+              description="Earn rewards for your profile updates, messages, and posts."
+            />
+            <RewardSection
+              icon={<Trophy className="w-8 h-8 text-yellow-400" />}
+              title="Each Talent Show"
+              description="Rank high in the annual Each Talent Show for surprise rewards!"
+            />
+            <RewardSection
+              icon={<Users className="w-8 h-8 text-blue-400" />}
+              title="Team Competitions"
+              description="Join a team during sign-up. The team with the most points at year-end gets special rewards for the entire following year."
+            />
+          </div>
+          <div className="mt-8 p-4 bg-purple-900 bg-opacity-30 rounded-lg">
+            <p className="text-purple-300 font-semibold">
+              Don't miss out on IRL items, cash rewards, coupons, and more exciting possibilities!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 };
+
+const RewardSection = ({ icon, title, description }) => (
+  <div className="flex items-start">
+    <div className="mr-4 flex-shrink-0">{icon}</div>
+    <div>
+      <h3 className="text-xl font-semibold text-purple-300 mb-2">{title}</h3>
+      <p className="text-gray-400">{description}</p>
+    </div>
+  </div>
+);
 
 export default Rewards;

@@ -1,47 +1,73 @@
-import React from "react";
+import React, { useState } from "react";
+import { Play, X } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
 
 const videoData = [
   {
     id: "video1",
-    title: "Add themes to your video posts, Pin other channels you support, add a section for requests, send your video in for review for our Each TV page and more.",
-    description: "",
+    title: "Enhance Your Video Experience",
+    description: "Add themes, pin channels, handle requests, and submit for EACH TV.",
     videoUrl: "https://www.youtube.com/embed/your-video-url-1", // Replace with your video URL
   },
-  // {
-  //   id: "video2",
-  //   title: "Video 2",
-  //   description: "Explore our platform features in this video tour.",
-  //   videoUrl: "https://www.youtube.com/embed/your-video-url-2", // Replace with your video URL
-  // },
-  // Add more video data here
+  // Add more video data here if needed
 ];
 
 const Videos = () => {
+  const [expandedImage, setExpandedImage] = useState(false);
+
   return (
-    <section className="bg-gradient-to-r from-red-400 to-white py-16">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold mb-8">Videos</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
-          {videoData.map((video) => (
-            <div key={video.id} className="bg-white rounded-lg shadow-md">
-              <div className="relative">
-                <iframe
-                  title={video.title}
-                  src={video.videoUrl}
-                  frameBorder="0"
-                  allowFullScreen
-                  className="w-full h-64 rounded-t-lg"
-                />
+    <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-16">
+      <div className="max-w-6xl mx-auto px-4">
+        <h2 className="text-4xl font-bold mb-8 text-center bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">
+          Videos
+        </h2>
+        <div className="flex flex-col md:flex-row gap-8">
+          <div className="md:w-1/2">
+            {videoData.map((video) => (
+              <div key={video.id} className="bg-gray-800 bg-opacity-50 backdrop-filter backdrop-blur-lg rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 mb-8">
+                <div className="relative aspect-video">
+                  <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
+                    <Play className="w-16 h-16 text-white opacity-75" />
+                  </div>
+                </div>
+                <div className="p-6">
+                  <h3 className="text-2xl font-semibold mb-2 text-purple-300">{video.title}</h3>
+                  <p className="text-gray-400">{video.description}</p>
+                </div>
               </div>
-              <div className="p-4">
-                <h3 className="text-2xl font-semibold mb-2">{video.title}</h3>
-                <p className="text-gray-600">{video.description}</p>
-              </div>
+            ))}
+          </div>
+          <div className="md:w-1/2">
+            <div 
+              className="bg-gray-800 bg-opacity-50 backdrop-filter backdrop-blur-lg rounded-lg overflow-hidden shadow-lg cursor-pointer"
+              onClick={() => setExpandedImage(true)}
+            >
+              <img src="/api/placeholder/600/400" alt="Expandable image" className="w-full h-auto" />
             </div>
-          ))}
+          </div>
         </div>
       </div>
-    </section>
+      <AnimatePresence>
+        {expandedImage && (
+          <motion.div 
+            className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+          >
+            <div className="relative max-w-4xl w-full">
+              <img src="/api/placeholder/1200/800" alt="Expanded image" className="w-full h-auto" />
+              <button 
+                className="absolute top-4 right-4 text-white"
+                onClick={() => setExpandedImage(false)}
+              >
+                <X className="w-8 h-8" />
+              </button>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
   );
 };
 

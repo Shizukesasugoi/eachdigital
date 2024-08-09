@@ -3,8 +3,9 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Providers from "./Provider";
 
+
 const inter = localFont({
-  src: "Helvetica.otf",
+  src: "sui-generis-free.rg-regular.otf",
   variable: "--font-inter",
 });
 
@@ -22,9 +23,10 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.variable} font-sans`}>
         <Providers>{children}</Providers>
-        <script>
+        <script >
           AOS.init();
-        </script>
+</script>
+        
       </body>
     </html>
   );

@@ -1,6 +1,7 @@
 import React from "react";
 import FeatureCard from "./FeatureCard";
 
+
 const ItsMoreThenYouThink = () => {
   return (
     <section className="bg-gradient-to-r from-cyan-red to-white">
@@ -44,5 +45,6 @@ const ItsMoreThenYouThink = () => {
     </section>
   );
 };
+
 
 export default ItsMoreThenYouThink;
